@@ -54,6 +54,7 @@ function App() {
           
           if (res.ok) {
             const data = await res.json();
+            console.log('Upload response:', data); // Now it's "used"
             newFiles.push({
               name: file.name,
               size: (file.size / 1024).toFixed(2),
